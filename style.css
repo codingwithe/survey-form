@@ -84,7 +84,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-text: center;
     padding: 5px 0px;
   }
   #dropdown label {
@@ -160,9 +159,6 @@
     justify-self: center;
     text-align: center;
     width: 150px;
-  }
-  #styledSelect option {
-    
   }
   #number {
     width: 90px;
