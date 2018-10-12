@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Survey Form</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Main Title-->
+        <h1 id="title">Cat Survey</h1>
+
+        <div class="container">
+            <!-- Form Description -->
+            <h2 id="description">Let us know how you feel about cats</h2>
+
+            <form id="survey-form">
+
+                <!-- Required Text Inputs -->
+                <div id="required-questions">
+                    <label id="name-label">Name : </label>
+                    <input type="text" id="name" placeholder="Your First Name" required>
+                    <label id="email-label">Email : </label>
+                    <input type="email" id="email" placeholder="Your@EmailAddress.com" required>
+                    <label id="number-label">Age : </label>
+                    <input type="number" id="number" placeholder="Your Age" required min="1" max="150">
+                </div>
+
+                <div id="survey-questions">
+                    <!-- dropdown -->
+                    <div id="dropdown">
+                        <label>Cuter? :</label>
+                        <select id="styledSelect" class="blueText">
+                            <option value="Kitten">Kitten</option>
+                            <option value="Cat">Cat</option>
+                        </select>
+                    </div>
+
+                    <!-- radio buttons -->
+                    <div id="radio-buttons" >
+                        <label class="question" for="cats">Which do you prefer? :</label>
+                            <div class="answer" name="more-cats">
+                                <p>Cats</p>
+                                    <input id="cats" type="radio" name="more-cats" value="cats" checked>
+                                <p>More Cats</p>
+                                    <input id="more-cats" type="radio" value="more-cats" name="more-cats">
+                            </div>
+                    </div>
+
+                    <!-- checkboxes -->
+                    <div id="checkboxes">
+                        <label for="black">Favorite Cat Colors:</label>
+                        <div class="checkboxes">
+                            <p for="white">Black</p>
+                                <input id="black" type="checkbox" name="cat-color" value="black" checked>
+                            <p for="white">White</p>
+                                <input id="black" type="checkbox" name="cat-color" value="white">
+                            <p for="orange">Orange</p>
+                                <input id="orange" type="checkbox" name="cat-color"value="orange">
+                            <p for="gray">Gray</p>
+                                <input id="gray" type="checkbox" name="cat-color" value="gray">
+                        </div>
+                    </div>
+                    
+                    <!-- optional text input -->
+                    <div id="optional-questions">
+                        <textarea type="text" id="textarea" placeholder="Additional Comments">Additional Comments</textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submit">Submit</button>
+            
+
+                </div>
+            </form>
+        </div>
+
+        <a href="#"><img class="center" src="https://bit.ly/fcc-relaxing-cat" alt="Cute orange cat"></a>
+
+    </body>
+    <footer>
+            <p class="copyright">&copy, Copyright E</p>
+    </footer>
+</html>
